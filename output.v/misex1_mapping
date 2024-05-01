@@ -1,0 +1,112 @@
+time is: 0.0013816356658935547
+\\\\\\ MAPPING OF /home/work/Desktop/abc/benchmarks/LGSynth91/misex1 WITH ROW SIZE = 20  \\\\\\
+
+Inputs:{dmpst3(0),dmpst2(1),dmpst1(2),dmpst0(3),xskip(4),yskip(5),page(6),rmwB(7)}
+Outputs:{dmnst3B(13),dmnst2B(12),dmnst1B(9),dmnst0B(11),adctlp2B(19),adctlp1B(14),adctlp0B(8)}
+
+EXECUTION SEQUENCE + MAPPING: {
+T0:dmpst3(0)=INPUT
+T0:dmpst2(1)=INPUT
+T0:dmpst1(2)=INPUT
+T0:dmpst0(3)=INPUT
+T0:xskip(4)=INPUT
+T0:yskip(5)=INPUT
+T0:page(6)=INPUT
+T0:rmwB(7)=INPUT
+T1:new_n16(19)=inv1{dmpst1(2)}
+T2:new_n17(18)=nor2{dmpst0(3),new_n16(19)}
+T3:new_n20(17)=inv1{dmpst0(3)}
+T4:new_n21(16)=nor2{new_n20(17),dmpst1(2)}
+T5:new_n22(15)=nor2{new_n21(16),new_n17(18)}
+T6:new_n23(14)=nor2{new_n22(15),dmpst2(1)}
+T7:new_n18(13)=nor2{new_n17(18),dmpst3(0)}
+T8:new_n19(12)=inv1{new_n18(13)}
+T9:new_n24(11)=nor2{new_n23(14),new_n19(12)}
+T10:new_n25(10)=inv1{new_n23(14)}
+T11:new_n26(9)=nor2{new_n25(10),new_n18(13)}
+T12:new_n27(8)=nor2{new_n26(9),new_n24(11)}
+T13:Initialization(Ron){new_n20(17),new_n22(15),new_n17(18),new_n19(12),new_n23(14),new_n18(13),new_n25(10),new_n24(11),new_n26(9)}
+T14:new_n28(9)=nor2{dmpst2(1),dmpst3(0)}
+T15:new_n29(11)=nor2{new_n28(9),new_n16(19)}
+T16:new_n30(10)=inv1{new_n29(11)}
+T17:dmnst3B(13)=nor2{new_n30(10),new_n27(8)}
+T18:new_n36(14)=inv1{yskip(5)}
+T19:new_n37(12)=nor2{new_n36(14),new_n16(19)}
+T20:new_n34(18)=inv1{page(6)}
+T21:new_n35(15)=nor2{new_n34(18),dmpst1(2)}
+T22:new_n38(17)=nor2{new_n37(12),new_n35(15)}
+T23:Initialization(Ron){new_n28(9),new_n30(10),new_n34(18),new_n35(15),new_n37(12)}
+T24:new_n39(12)=inv1{new_n38(17)}
+T25:new_n32(15)=nor2{dmpst0(3),dmpst2(1)}
+T26:new_n33(18)=inv1{new_n32(15)}
+T27:new_n40(10)=nor2{new_n39(12),new_n33(18)}
+T28:new_n41(9)=nor2{new_n40(10),new_n29(11)}
+T29:Initialization(Ron){new_n38(17),new_n32(15),new_n39(12),new_n29(11)}
+T30:new_n42(11)=inv1{new_n41(9)}
+T31:dmnst2B(12)=nor2{new_n42(11),new_n27(8)}
+T32:new_n44(15)=inv1{dmpst2(1)}
+T33:new_n45(17)=inv1{xskip(4)}
+T34:Initialization(Ron){new_n41(9),new_n42(11)}
+T35:new_n46(11)=nor2{new_n45(17),dmpst1(2)}
+T36:new_n47(9)=nor2{new_n46(11),dmpst0(3)}
+T37:Initialization(Ron){new_n45(17),new_n46(11)}
+T38:new_n48(11)=nor2{new_n47(9),new_n44(15)}
+T39:new_n49(17)=nor2{new_n48(11),new_n40(10)}
+T40:Initialization(Ron){new_n47(9),new_n48(11)}
+T41:new_n50(11)=nor2{new_n49(17),dmpst3(0)}
+T42:new_n51(9)=inv1{new_n21(16)}
+T43:Initialization(Ron){new_n49(17),new_n21(16)}
+T44:new_n52(16)=inv1{dmpst3(0)}
+T45:new_n53(17)=nor2{dmpst2(1),new_n52(16)}
+T46:Initialization(Ron){new_n52(16)}
+T47:new_n54(16)=inv1{new_n53(17)}
+T48:Initialization(Ron){new_n53(17)}
+T49:new_n55(17)=nor2{new_n54(16),new_n51(9)}
+T50:Initialization(Ron){new_n51(9),new_n54(16)}
+T51:new_n56(16)=nor2{new_n55(17),new_n50(11)}
+T52:dmnst1B(9)=inv1{new_n56(16)}
+T53:Initialization(Ron){new_n50(11),new_n56(16)}
+T54:new_n59(16)=nor2{new_n33(18),new_n16(19)}
+T55:new_n60(11)=inv1{new_n59(16)}
+T56:Initialization(Ron){new_n16(19),new_n33(18),new_n59(16)}
+T57:new_n58(16)=nor2{new_n36(14),dmpst3(0)}
+T58:new_n61(18)=nor2{new_n60(11),new_n58(16)}
+T59:new_n62(19)=inv1{rmwB(7)}
+T60:Initialization(Ron){new_n36(14),new_n58(16),new_n60(11)}
+T61:new_n63(11)=nor2{xskip(4),dmpst0(3)}
+T62:new_n64(16)=nor2{new_n63(11),new_n62(19)}
+T63:new_n65(14)=nor2{new_n44(15),dmpst3(0)}
+T64:Initialization(Ron){new_n62(19),new_n63(11),new_n44(15)}
+T65:new_n66(15)=inv1{new_n65(14)}
+T66:new_n67(11)=nor2{new_n66(15),dmpst1(2)}
+T67:new_n68(19)=inv1{new_n67(11)}
+T68:Initialization(Ron){new_n65(14),new_n67(11)}
+T69:new_n69(11)=nor2{new_n68(19),new_n64(16)}
+T70:new_n70(14)=nor2{new_n69(11),new_n61(18)}
+T71:Initialization(Ron){new_n64(16),new_n68(19),new_n69(11)}
+T72:dmnst0B(11)=inv1{new_n70(14)}
+T73:adctlp2B(19)=inv1{new_n27(8)}
+T74:new_n73(16)=inv1{new_n40(10)}
+T75:Initialization(Ron){new_n70(14),new_n40(10)}
+T76:new_n74(10)=nor2{new_n73(16),dmpst3(0)}
+T77:adctlp1B(14)=nor2{new_n74(10),new_n27(8)}
+T78:Initialization(Ron){new_n73(16),new_n27(8),new_n74(10)}
+T79:new_n79(10)=nor2{new_n61(18),new_n55(17)}
+T80:new_n80(8)=inv1{new_n79(10)}
+T81:new_n76(16)=nor2{xskip(4),dmpst1(2)}
+T82:Initialization(Ron){new_n55(17),new_n61(18),new_n79(10)}
+T83:new_n77(10)=nor2{new_n76(16),dmpst0(3)}
+T84:new_n78(18)=nor2{new_n77(10),new_n66(15)}
+T85:new_n81(17)=nor2{new_n80(8),new_n78(18)}
+T86:Initialization(Ron){new_n76(16),new_n66(15),new_n77(10),new_n78(18),new_n80(8)}
+T87:adctlp0B(8)=inv1{new_n81(17)}
+}
+
+RESULTS AND STATISTICS:
+Benchmark: /home/work/Desktop/abc/benchmarks/LGSynth91/misex1
+Total number of cycles: 87
+Number of reuse cycles: 20
+Initialization percentage: 0.22988505747126436
+Number of gates: 67
+Row size (number of columns): 20 
+
